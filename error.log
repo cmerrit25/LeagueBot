@@ -341,3 +341,40 @@ INFO:__main__:HrwPKEHOCaydzW-l3MP-tIljgF_jKEYUSvXAxZ3dIB8d5moL3aE-P0-DoPFF8_5Htg
 INFO:__main__:yOM00cNYd6DxMfbvwgsqsJVb9cRQrU2cxEcByt44XQyeKFU
 INFO:__main__:HrwPKEHOCaydzW-l3MP-tIljgF_jKEYUSvXAxZ3dIB8d5moL3aE-P0-DoPFF8_5HtgrEZH7ozp7DPA
 INFO:__main__:yOM00cNYd6DxMfbvwgsqsJVb9cRQrU2cxEcByt44XQyeKFU
+INFO:__main__:None
+INFO:__main__:None
+ERROR:discord.ext.commands.bot:Ignoring exception in command stats
+Traceback (most recent call last):
+  File "C:\Users\cmerr\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cmerr\PycharmProjects\LeagueBot\src\bot.py", line 62, in fetch_player_stats
+    output = format_ranked_stats(ranked_stats)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cmerr\PycharmProjects\LeagueBot\src\utils\data_formatter.py", line 7, in format_ranked_stats
+    for queue in ranked_stats:
+                 ^^^^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\cmerr\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\cmerr\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\cmerr\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: 'NoneType' object is not iterable
+INFO:__main__:HrwPKEHOCaydzW-l3MP-tIljgF_jKEYUSvXAxZ3dIB8d5moL3aE-P0-DoPFF8_5HtgrEZH7ozp7DPA
+INFO:__main__:yOM00cNYd6DxMfbvwgsqsJVb9cRQrU2cxEcByt44XQyeKFU
+INFO:commands.stats:HrwPKEHOCaydzW-l3MP-tIljgF_jKEYUSvXAxZ3dIB8d5moL3aE-P0-DoPFF8_5HtgrEZH7ozp7DPA
+INFO:commands.stats:yOM00cNYd6DxMfbvwgsqsJVb9cRQrU2cxEcByt44XQyeKFU
+INFO:commands.stats:None
+INFO:commands.stats:HrwPKEHOCaydzW-l3MP-tIljgF_jKEYUSvXAxZ3dIB8d5moL3aE-P0-DoPFF8_5HtgrEZH7ozp7DPA
+INFO:commands.stats:yOM00cNYd6DxMfbvwgsqsJVb9cRQrU2cxEcByt44XQyeKFU
+INFO:commands.stats:HrwPKEHOCaydzW-l3MP-tIljgF_jKEYUSvXAxZ3dIB8d5moL3aE-P0-DoPFF8_5HtgrEZH7ozp7DPA
+INFO:commands.stats:yOM00cNYd6DxMfbvwgsqsJVb9cRQrU2cxEcByt44XQyeKFU
+INFO:commands.stats:HrwPKEHOCaydzW-l3MP-tIljgF_jKEYUSvXAxZ3dIB8d5moL3aE-P0-DoPFF8_5HtgrEZH7ozp7DPA
+INFO:commands.stats:yOM00cNYd6DxMfbvwgsqsJVb9cRQrU2cxEcByt44XQyeKFU
